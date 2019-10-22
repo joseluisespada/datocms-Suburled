@@ -8,10 +8,10 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
 import classNames from "classnames";
-import mainPageStyle from "assets/jss/nextjs-material-kit-pro/pages/mainPageStyle.js";
+import workPageStyle from "assets/jss/nextjs-material-kit-pro/pages/workPageStyle.js";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(mainPageStyle);
+const useStyles = makeStyles(workPageStyle);
 
 
 export default ({ data }) => {
@@ -31,9 +31,9 @@ export default ({ data }) => {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container} style={{maxWidth: "max-content"}}>
 
-         <div className="sheet__inner">
-              <p className="sheet__lead">{data.datoCmsWork.excerpt}</p>
-              <div className="sheet__slider">
+         <div className={classes.sheetInner}>
+              <p className={classes.sheetLead}>{data.datoCmsWork.excerpt}</p>
+              <div className={classes.sheetSlider}>
                 <Slider infinite={true} slidesToShow={2} arrows>
                   {data.datoCmsWork.gallery.map(({ fluid }) => (
                     <img alt={data.datoCmsWork.title} key={fluid.src} src={fluid.src} />

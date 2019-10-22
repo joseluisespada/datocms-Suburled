@@ -20,9 +20,9 @@ import 'styles/index.sass' //quitar, css del primer template
 
 import "assets/scss/nextjs-material-kit-pro.scss";
 
-import "assets/css/react-demo.css";
+// import "assets/css/react-demo.css";
 
-import "animate.css/animate.min.css";
+// import "animate.css/animate.min.css";
 
 const useStyles = makeStyles(layoutPageStyle);
 
