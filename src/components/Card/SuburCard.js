@@ -6,7 +6,7 @@ import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
 import Info from "components/Typography/Info.js";
 import Img from 'gatsby-image';
-import suburCardStyle from "public/jss/nextjs-material-kit-pro/components/suburCardStyle.js";
+import suburCardStyle from "assets/jss/nextjs-material-kit-pro/components/suburCardStyle.js";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(suburCardStyle);

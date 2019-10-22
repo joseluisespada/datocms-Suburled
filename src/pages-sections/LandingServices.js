@@ -6,7 +6,7 @@ import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
 import Info from "components/Typography/Info.js";
-import Image from "public/img/bg8.jpg";
+import Image from "assets/img/bg8.jpg";
 
 
 const CardLayout = ({ classes, href, title, title2, desc }) => {

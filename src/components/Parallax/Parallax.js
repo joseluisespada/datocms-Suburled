@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 
 // core components
-import styles from "public/jss/nextjs-material-kit-pro/components/parallaxStyle.js";
+import styles from "assets/jss/nextjs-material-kit-pro/components/parallaxStyle.js";
 
 const useStyles = makeStyles(styles);
 

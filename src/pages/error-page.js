@@ -13,9 +13,9 @@ import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 
-import errorPageStyle from "public/jss/nextjs-material-kit-pro/pages/errorPageStyles.js";
+import errorPageStyle from "assets/jss/nextjs-material-kit-pro/pages/errorPageStyles.js";
 
-import image from "public/img/clint-mckoy.jpg";
+import image from "assets/img/clint-mckoy.jpg";
 
 const useStyles = makeStyles(errorPageStyle);
 

@@ -9,7 +9,7 @@ import {
   infoColor,
   whiteColor,
   title
-} from "public/jss/nextjs-material-kit-pro.js";
+} from "assets/jss/nextjs-material-kit-pro.js";
 
 const useStyles = makeStyles({
   progress: {

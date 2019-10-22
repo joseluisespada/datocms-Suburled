@@ -5,9 +5,9 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 
 import Parallax from "components/Parallax/Parallax.js";
-import landingPageStyle from "public/jss/nextjs-material-kit-pro/pages/landingPageStyle.js";
+import landingPageStyle from "assets/jss/nextjs-material-kit-pro/pages/landingPageStyle.js";
 import { makeStyles } from "@material-ui/core/styles";
-import Image from "public/img/bg8.jpg";
+import Image from "assets/img/bg8.jpg";
 import LandingServices from "pages-sections/LandingServices";
 
 const useStyles = makeStyles(landingPageStyle);

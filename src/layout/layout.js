@@ -14,13 +14,13 @@ import Footer from "components/Footer/Footer.js";
 
 import HeaderLinks from "components/Header/HeaderLinks.js";
 
-import layoutPageStyle from "public/jss/nextjs-material-kit-pro/pages/layoutPageStyle.js";
+import layoutPageStyle from "assets/jss/nextjs-material-kit-pro/pages/layoutPageStyle.js";
 
 import 'styles/index.sass' //quitar, css del primer template
 
-import "public/scss/nextjs-material-kit-pro.scss";
+import "assets/scss/nextjs-material-kit-pro.scss";
 
-import "public/css/react-demo.css";
+import "assets/css/react-demo.css";
 
 import "animate.css/animate.min.css";
 

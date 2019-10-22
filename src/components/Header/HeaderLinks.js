@@ -24,7 +24,7 @@ import ViewDay from '@material-ui/icons/CalendarViewDay';
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
-import styles from "public/jss/nextjs-material-kit-pro/components/headerLinksStyle.js";
+import styles from "assets/jss/nextjs-material-kit-pro/components/headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
 
