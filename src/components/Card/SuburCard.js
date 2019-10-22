@@ -27,7 +27,7 @@ const SuburCard = ({ work }) => {
           <div
             className={classes.coloredShadow}
             style={{
-              backgroundImage: `url(${Image})`,
+              backgroundImage: `url(${work.coverImage.fluid})`,
               opacity: "1"
             }}
           />
