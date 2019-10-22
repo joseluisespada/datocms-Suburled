@@ -44,7 +44,7 @@ const workPageStyle = {
 
   },
   sheetGallery: {
-    marginBottom: "30px"
+    margin: "30px 0"
   }
 };
 

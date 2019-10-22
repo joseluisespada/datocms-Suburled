@@ -41,12 +41,12 @@ export default ({ data }) => {
                 </Slider>
               </div>
               <div
-                className="sheet__body"
+                className={classes.sheetBody}
                 dangerouslySetInnerHTML={{
                   __html: data.datoCmsWork.descriptionNode.childMarkdownRemark.html,
                 }}
               />
-              <div className="sheet__gallery">
+              <div className={classes.sheetGallery}>
                 <Img fluid={data.datoCmsWork.coverImage.fluid} />
               </div>
             </div>

@@ -68,6 +68,9 @@ const landingPageStyle = {
     height: "18px",
     top: "3px",
     position: "relative"
+  },
+  works: {
+    marginTop: "60px"
   }
 };
 

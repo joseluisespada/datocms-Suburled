@@ -33,6 +33,13 @@ const Viviendas = ({ data }) => {
 
         <ReformasContent />
 
+        {data.allDatoCmsWork.edges.length > 0 ?
+          <div className={classes.works}>
+            <hr />
+            <h2>Algunos trabajos realizados</h2>
+          </div>
+        : null}
+
         <GridContainer>
           {data.allDatoCmsWork.edges.map(({ node: work }) => (            
             <SuburCard key={work.id} work={work} />
