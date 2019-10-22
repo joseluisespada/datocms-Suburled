@@ -1,51 +1,59 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Masonry from 'react-masonry-component'
-import Img from 'gatsby-image'
-import Layout from "../components/layout"
+import classNames from "classnames";
+import Layout from "layout/layout"
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <Masonry className="showcase">
-      {data.allDatoCmsWork.edges.map(({ node: work }) => (
-        <div key={work.id} className="showcase__item">
-          <figure className="card">
-            <Link to={`/works/${work.slug}`} className="card__image">
-              <Img fluid={work.coverImage.fluid} />
-            </Link>
-            <figcaption className="card__caption">
-              <h6 className="card__title">
-                <Link to={`/works/${work.slug}`}>{work.title}</Link>
-              </h6>
-              <div className="card__description">
-                <p>{work.excerpt}</p>
-              </div>
-            </figcaption>
-          </figure>
+import Parallax from "components/Parallax/Parallax.js";
+import landingPageStyle from "public/jss/nextjs-material-kit-pro/pages/landingPageStyle.js";
+import { makeStyles } from "@material-ui/core/styles";
+import Image from "public/img/bg8.jpg";
+import LandingServices from "pages-sections/LandingServices";
+
+const useStyles = makeStyles(landingPageStyle);
+
+
+const IndexPage = ({ data }) => {
+  const classes = useStyles();
+  return (
+    <Layout>
+      <Parallax image={Image} filter="dark">
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem xs={12} sm={6} md={6}>
+              <h1 className={classes.title}>Suburled</h1>
+              <h4>
+                Instalaciones eléctricas, contra incendios, reformas y mantenimientos en Barcelona.
+              </h4>
+              <br />
+            </GridItem>
+          </GridContainer>
         </div>
-      ))}
-    </Masonry>
-  </Layout>
-)
+      </Parallax>
+      <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classes.container}>
+          <LandingServices classes={classes} />          
+        </div>
+      </div>   
+    </Layout>
+)}
 
-export default IndexPage
+export default IndexPage;
 
-export const query = graphql`
-  query IndexQuery {
-    allDatoCmsWork(sort: { fields: [position], order: ASC }) {
-      edges {
-        node {
-          id
-          title
-          slug
-          excerpt
-          coverImage {
-            fluid(maxWidth: 450, imgixParams: { fm: "jpg", auto: "compress" }) {
-              ...GatsbyDatoCmsSizes
-            }
-          }
-        }
-      }
-    }
-  }
-`
+/*
+<div key={work.id} className="showcase__item">
+              <figure className="card">
+                <Link to={`/works/${work.slug}`} className="card__image">
+                  <Img fluid={work.coverImage.fluid} />
+                </Link>
+                <figcaption className="card__caption">
+                  <h6 className="card__title">
+                    <Link to={`/works/${work.slug}`}>{work.title}</Link>
+                  </h6>
+                  <div className="card__description">
+                    <p>{work.excerpt}</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            */

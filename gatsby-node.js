@@ -18,7 +18,7 @@ exports.createPages = ({ graphql, actions }) => {
     `).then(result => {
       result.data.allDatoCmsWork.edges.map(({ node: work }) => {
         createPage({
-          path: `works/${work.slug}`,
+          path: `trabajos/${work.slug}`,
           component: path.resolve(`./src/templates/work.js`),
           context: {
             slug: work.slug,
@@ -27,5 +27,13 @@ exports.createPages = ({ graphql, actions }) => {
       })
       resolve()
     })
+  })
+}
+
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, "src"), "node_modules"],
+    },
   })
 }
