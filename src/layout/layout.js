@@ -27,10 +27,6 @@ import "assets/scss/nextjs-material-kit-pro.scss";
 const useStyles = makeStyles(layoutPageStyle);
 
 export default ({ children, ...rest }) => {
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  });
   const classes = useStyles();
   return (
     <div>

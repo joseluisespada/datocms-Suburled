@@ -22,5 +22,11 @@ module.exports = {
         }
       }
     },
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        disableAutoprefixing: false,
+      },
+    },
   ],
 }

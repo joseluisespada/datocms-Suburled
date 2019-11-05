@@ -16,6 +16,9 @@ const landingPageStyle = {
     zIndex: "2",
     padding: "70px 0"
   },
+  wrapper: {
+    paddingBottom: "70px"
+  },
   title: {
     ...title,
     display: "inline-block",
@@ -28,7 +31,13 @@ const landingPageStyle = {
   subtitle: {
     fontSize: "1.313rem",
     maxWidth: "500px",
-    margin: "10px auto 0"
+    margin: "0 0 40px",
+    background: "rgba(0,0,0,0.5)",
+    width: "max-content",
+    padding: "0 15px"
+  },
+  cardDescriptionWhite: {
+    minHeight: "100px"
   },
   main: {
     ...main,
