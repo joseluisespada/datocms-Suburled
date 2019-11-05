@@ -19,6 +19,13 @@ const landingPageStyle = {
   wrapper: {
     paddingBottom: "70px"
   },
+  typist: {
+    fontSize: "1.125rem",
+    lineHeight: "1.5em",
+    "@media (min-width: 768px)": {
+      fontSize: "2.25rem"
+    },
+  },
   title: {
     ...title,
     display: "inline-block",

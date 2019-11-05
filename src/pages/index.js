@@ -60,10 +60,10 @@ class IndexPage extends React.Component {
         <Parallax image={Image} filter="dark">
           <div className={classes.container}>
             <GridContainer>
-              <GridItem xs={12} sm={6} md={6}>
+              <GridItem xs={12}>
 
                 {this.state.renderMsg ?
-                  <h2>
+                  <h2 className={classes.typist}>
                     <Typist
                       className="typist-header"
                       avgTypingDelay={20}
@@ -84,7 +84,7 @@ class IndexPage extends React.Component {
                     <Typist.Backspace count={texts[5].length} delay={delay} />
                   </Typist>
                   </h2>
-                : <h2>|</h2>}
+                : <h2 className={classes.typist}>|</h2>}
 
                 <h4 className={classes.subtitle}>A un precio sin compentencia</h4>
 

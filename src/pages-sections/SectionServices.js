@@ -6,6 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import Gesture from "@material-ui/icons/Gesture";
 import Build from "@material-ui/icons/Build";
+import BorderColorIcon from '@material-ui/icons/BorderColor';
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -49,7 +50,7 @@ export default function SectionServices() {
               </span>
             }
             icon={Gesture}
-            iconColor="rose"
+            iconColor="primary"
           />
         </GridItem>
         <GridItem md={4} sm={4}>
@@ -63,7 +64,7 @@ export default function SectionServices() {
               </span>
             }
             icon={Build}
-            iconColor="rose"
+            iconColor="primary"
           />
         </GridItem>
         <GridItem md={4} sm={4}>
@@ -76,8 +77,8 @@ export default function SectionServices() {
                 </p>
               </span>
             }
-            icon="mode_edit"
-            iconColor="rose"
+            icon={BorderColorIcon}
+            iconColor="primary"
           />
         </GridItem>
       </GridContainer>
