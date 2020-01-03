@@ -7,7 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
 
-import styles from "assets/jss/nextjs-material-kit-pro/components/customFileInputStyle.js";
+import styles from "assets/jss/styles/components/customFileInputStyle.js";
 
 const useStyles = makeStyles(styles);
 

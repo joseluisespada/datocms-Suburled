@@ -13,7 +13,7 @@ import GridItem from "components/Grid/GridItem.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
 
-import contactStyle from "assets/jss/nextjs-material-kit-pro/pages/landing/contactStyle.js";
+import contactStyle from "assets/jss/styles/pages/landing/contactStyle.js";
 
 const useStyles = makeStyles(contactStyle);
 

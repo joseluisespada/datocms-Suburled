@@ -7,7 +7,7 @@ import GridItem from "components/Grid/GridItem.js";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-import officeStyle from "assets/jss/nextjs-material-kit-pro/pages/landing/worksStyle.js";
+import officeStyle from "assets/jss/styles/pages/landing/worksStyle.js";
 
 // office
 import office1 from "assets/img/works/tela.jpg";
@@ -32,7 +32,7 @@ export default function SectionWorks() {
             Algunos de nuestros trabajos
           </h2>
           <h4 className={classes.description}>
-            Nos avalan años de experiencia y cientos de obras y reformas. Somos especialistas en construcción y reformas de viviendas y locales comerciales y en instaciones industriales.
+            Nos avalan años de experiencia y cientos de obras y reformas. Somos especialistas en construcción y reformas de viviendas y locales comerciales y en instalaciones industriales.
           </h4>
         </GridItem>
       </GridContainer>

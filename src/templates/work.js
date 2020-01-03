@@ -8,7 +8,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
 import classNames from "classnames";
-import workPageStyle from "assets/jss/nextjs-material-kit-pro/pages/workPageStyle.js";
+import workPageStyle from "assets/jss/styles/pages/workPageStyle.js";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(workPageStyle);

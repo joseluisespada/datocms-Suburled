@@ -1,10 +1,11 @@
+
 import React from 'react'
 import classNames from "classnames";
 import Layout from "layout/layout"
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
-import mainPageStyle from "assets/jss/nextjs-material-kit-pro/pages/mainPageStyle.js";
+import mainPageStyle from "assets/jss/styles/pages/mainPageStyle.js";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(mainPageStyle);
